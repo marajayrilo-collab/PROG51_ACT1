@@ -1,0 +1,23 @@
+#include <iostream>
+  int main() {
+  using namespace std;
+   
+    double highestScore; 
+    double yourScore;
+
+    std::cout << "Please enter 5 scores:\n";
+
+   
+    for (int i = 1; i <= 5; ++i) {
+        cout << "Enter score no" << i << ": ";
+        cin >> yourScore;
+
+        if (i == 1 || yourScore > highestScore) {
+            highestScore = yourScore;
+        }
+    
+    }
+cout << "The highest score is: " << highestScore <<endl;
+
+    return 0;
+}
